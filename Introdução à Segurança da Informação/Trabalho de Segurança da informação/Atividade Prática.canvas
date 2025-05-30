@@ -1,0 +1,20 @@
+{
+	"nodes":[
+		{"id":"c6d350e0ca1cd564","type":"text","text":"Simulação de Elaboração de um PCN Simplificado","x":-320,"y":-520,"width":460,"height":60},
+		{"id":"97639c27d8a6a999","type":"text","text":"Cada grupo deve:​\n\n1. Escolher uma organização real ou fictícia​\n\n2. Identificar um incidente disruptivo​\n\n3. Criar um PCN com:​\n\n- Análise de Impacto​\n\n- Ações imediatas​\n\n- Ações de recuperação​\n\n- Ferramentas e tecnologias usadas​","x":-460,"y":-440,"width":741,"height":380},
+		{"id":"b3021c6eaf668d15","type":"text","text":"Orientações Iniciais​","x":-214,"y":0,"width":250,"height":50},
+		{"id":"f20d3e1d84889426","type":"text","text":"Escolher uma organização-alvo:​\nPode ser real ou fictícia (ex: hospital, escola, startup de tecnologia, banco digital, indústria farmacêutica, prefeitura, e-commerce, etc.).​\n\nDefinir um cenário de incidente disruptivo:​\n\nAtaque ransomware​\n\nIncêndio no data center​\n\nFalha elétrica generalizada​\n\nVazamento de dados sensíveis​\n\nGreve dos funcionários​\n\nPandemia ou epidemia​\n\n**Principais orientações no arquivo de word​\n\n**Mostrar um exemplo de PCN da DEX Capital​","x":-423,"y":100,"width":667,"height":580},
+		{"id":"85570ce8caa007bd","type":"text","text":"Entrega do Trabalho (Formato ABNT)​","x":-980,"y":-355,"width":355,"height":50},
+		{"id":"ef8ba7fb9880132a","type":"text","text":"- Capa, sumário, introdução, descrição da organização​\n\n- Análise de impacto, plano de continuidade, tecnologias, conclusão, referências​\n\n- Entrega: formato .doc ou .pdf em até 7 dias​\n\n- Grupo de 3 a 5 alunos​\n\n- Avaliação com base em clareza, estrutura, aplicação prática e ABNT​\n\n- Impresso","x":-1155,"y":-250,"width":695,"height":208},
+		{"id":"8a7444cbd2bac5ae","type":"text","text":"Objetivo da Atividade​\n\nSimular a elaboração de um Plano de Continuidade de Negócios (PCN) para uma organização real ou fictícia, considerando um cenário de incidente disruptivo, com o uso de tecnologias e ações preventivas e corretivas adequadas.​","x":160,"y":-525,"width":480,"height":220,"color":"#000000"}
+	],
+	"edges":[
+		{"id":"7e06066a714527d2","fromNode":"97639c27d8a6a999","fromSide":"bottom","toNode":"b3021c6eaf668d15","toSide":"top"},
+		{"id":"2622c5609f1532db","fromNode":"c6d350e0ca1cd564","fromSide":"bottom","toNode":"97639c27d8a6a999","toSide":"top"},
+		{"id":"da7accc462a48aca","fromNode":"b3021c6eaf668d15","fromSide":"bottom","toNode":"f20d3e1d84889426","toSide":"top"},
+		{"id":"346094a4648a4f29","fromNode":"b3021c6eaf668d15","fromSide":"bottom","toNode":"f20d3e1d84889426","toSide":"top"},
+		{"id":"0a31eaea987743f0","fromNode":"c6d350e0ca1cd564","fromSide":"top","toNode":"85570ce8caa007bd","toSide":"top"},
+		{"id":"877048f0dc72c192","fromNode":"85570ce8caa007bd","fromSide":"bottom","toNode":"ef8ba7fb9880132a","toSide":"top"},
+		{"id":"b1337ba04bb17fa4","fromNode":"97639c27d8a6a999","fromSide":"right","toNode":"8a7444cbd2bac5ae","toSide":"bottom"}
+	]
+}
