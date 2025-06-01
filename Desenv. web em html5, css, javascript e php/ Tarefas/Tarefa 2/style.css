@@ -1,0 +1,144 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+html {
+  font-family: "Poppins", sans-serif;
+  font-size: 1em;
+}
+
+body {
+  background-color: #36393e;
+  color: black;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #292b2f;
+  padding: 0.6rem 3rem;
+  color: rgba(240, 248, 255, 0.808);
+  letter-spacing: 0.1rem;
+  position: fixed;
+  width: 100%;
+  z-index: 10;
+  top: 0;
+  left: 0;
+}
+
+.logo {
+  font-size: 1.5rem;
+}
+
+.menu a.nav {
+  text-decoration: none;
+  color: rgba(240, 248, 255, 0.808);
+  font-weight: 700;
+  padding: 0.6rem 1rem;
+  border: solid 1px rgba(240, 248, 255, 0.808);
+  transition: 0.5s;
+}
+
+.menu a.nav:hover {
+  color: #36393e;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-top: 5em;
+}
+
+.titulo {
+  display: flex;
+  color: rgba(240, 248, 255, 0.808);
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: 0.1rem;
+  word-spacing: 0.5rem;
+  text-shadow: 0.2rem 0 0.2rem #292b2f;
+  margin-bottom: 15px;
+}
+
+a.nav-acesso {
+  color: rgba(240, 248, 255, 0.808);
+  padding-left: 20px;
+  text-decoration: none;
+}
+
+a.nav-acesso:hover {
+  text-decoration: underline;
+  color: rgb(228, 162, 39);
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin: 0.9em 0;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 0;
+  position: fixed;
+  bottom: 0;
+  font-size: 0.8rem;
+
+  h3 {
+    text-transform: uppercase;
+  }
+
+  .detalhes {
+    display: flex;
+    height: 9.3em;
+    background-color: white;
+    padding: 2em;
+    position: relative;
+
+    .divisor {
+      display: none;
+      width: 1px;
+      height: 100%;
+      background: black;
+    }
+
+    div:nth-child(1n) {
+      width: 100%;
+      border-right: 1px solid black;
+      padding: 0.6em;
+      margin-right: 0.6em;
+    }
+
+    div:last-of-type {
+      border-right: 0;
+      margin: 0;
+    }
+  }
+
+  .rede-social {
+    .icones i {
+      font-size: 1.25em;
+      margin-right: 0.8em;
+
+      &:hover {
+        color: rgb(228, 162, 39);
+        border-color: rgb(228, 162, 39);
+      }
+    }
+  }
+
+  .faixa {
+    height: 3rem;
+    background-color: rgb(228, 162, 39);
+  }
+}
