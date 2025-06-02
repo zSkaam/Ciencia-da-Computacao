@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+	<title>Requisição a recurso JSON</title>
+</head>
+<body>
+	<button onclick="loadRemoteJson()">Carregar Json</button>
+</body>
+	<script type="text/javascript">
+	
+		function loadRemoteJson(){			
+			fetch ('data.json',{
+            method:'get'
+            })
+			.then (function(response){
+				response.json().then(function(data){
+					console.log("Dados do Json local: " + JSON.stringify(data));
+			});
+        })
+			.catch(function(err) {
+				console.error('O seguinte erro ocorreu durante a requisição: ' + err);
+			});
+		}
+	</script>
+</html
