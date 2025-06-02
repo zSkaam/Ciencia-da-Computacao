@@ -1,6 +1,0 @@
-Instruções
-Crie, em seu computador, em qualquer pasta, dois arquivos. O primeiro deve apresentar a extensão “.json”;
-
-O segundo arquivo, uma página html, deve ser criado na mesma pasta em que salvou o primeiro;
-
-Em seguida, clique no arquivo html para que ele seja aberto no navegador. Com a página aberta, clique no botão “Carregar Json Local”. Por fim, abra o inspecionador de elemento e analise o conteúdo da aba “console”.
