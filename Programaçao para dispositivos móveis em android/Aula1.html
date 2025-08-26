@@ -1,0 +1,19 @@
+<html> 
+<body> 
+    <script> 
+    var a = parseFloat(prompt("Digite o coeficiente a "));
+    var b = parseFloat(prompt("Digite o coeficiente b "));
+    var c = parseFloat(prompt("Digite o coeficiente c "));
+
+    let delta=b**2-4*a*c;
+    if (delta < 0) {
+        console.log("A equação não possui raizes reais");
+    } else {
+    console.log("A esquação possui raizes reais");
+    let x1=(-b+delta**0.5)/2*a;
+    let x2=(-b+delta**0.5)/2*a;
+    console.log("x1 vale "+x1+" x2 vale "+x2);
+    }
+    </script>
+</body>
+</html>
