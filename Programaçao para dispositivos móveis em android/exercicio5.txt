@@ -1,0 +1,9 @@
+Elaborar o programa do calculo do imc usando loop while que pergunta ao usuário final de cada calculo
+se você quer continuar 
+
+if (imc<30){
+    classificação
+}
+else if (imc>=30 && imc<34,9){
+    classificação
+}

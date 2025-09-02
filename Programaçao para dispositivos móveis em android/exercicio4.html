@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function aprovacao(not1,nota2,frequencia,nome){
+            var media=(nota1+nota2)/2
+            if (media>=6 && frequencia>=75){
+                var aprov="Aprovado com a média"+media;
+            }
+            else{
+               var aprov= "Reprovado com a média"+media ;                
+            }
+            return aprov;
+        }
+        for (let i = 0; i < 5; i++){
+            var nota1 = parseFloat(prompt("Qual o valor da nota1 "));
+            var nota2 = parseFloat(prompt("Qual o valor da nota2 "));
+            var frequencia = parseFloat(prompt("Qual a frenquência do aluno "));
+            var nome = prompt("Qual o nome do aluno ");
+            console.log(aprovacao(nota1,nota2,frequencia,nome));
+
+        }
+
+    </script>
+</body>
+</html>

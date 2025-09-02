@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function CalculaIMC(peso,altura,nome){
+            var imc=peso/altura**2;
+            if (imc<30){
+                 var classificacao=nome+" não apresenta obesidade IMC= "+imc;
+                }
+            else if(imc>=30 && imc<34.9){
+                var classificacao=nome+" apresenta obesidade grau I IMC= "+imc;                
+            }
+            else if(imc>34.9 && imc<39.9){
+                var classificacao=nome+" apresenta obesidade grau II IMC= "+imc;
+            }
+            else{
+            var classificacao=nome+" apresenta obesidade grau III IMC= "+imc;
+           }            
+           return classificacao;
+        }
+        var continua="s";
+         while (continua==="s"){
+            var peso = parseFloat(prompt("Qual o valor do peso em Kg "));
+            var altura = parseFloat(prompt("Quak o valor da altura em Metros "));
+            var nome = prompt("Qual o nome do paciente ");
+            console.log(CalculaIMC(peso,altura,nome));
+            continua = prompt("Continua a execução s/n ");
+        }
+
+    </script>
+</body>
+</html>

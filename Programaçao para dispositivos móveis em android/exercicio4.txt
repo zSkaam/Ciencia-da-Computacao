@@ -1,0 +1,3 @@
+Elaborar um programa javascript para ler duas notas e a frequencia de 5 e o
+nome dos alunos e exibir "aprovado" caso a media seja >=6 e a frequencia >=75% 
+e reprovado caso contrário, usando uma função para isso
