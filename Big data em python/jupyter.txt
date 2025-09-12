@@ -1,0 +1,36 @@
+#No CMD baixar o jupyter
+pip install jupyter notebook
+
+#No jupyter
+!pip install numpy
+!pip install pandas
+!pip install scikit-learn
+!pip install matplotlib
+
+import pandas
+import sklearn
+import matplotlib
+
+#1
+import pandas as pd
+dados = {
+    "Nome": ["Ana", "Pedro", "Lucas"],
+    "Idade": [23,30,25],
+    "Cidade": ["SP","RJ","BH"]
+}
+df = pd.DataFrame(dados)
+
+print(df)
+print(df[df["Idade"]>24])
+
+#2
+import numpy as np
+
+arr = np.array ([1, 2, 3, 4, 5])
+
+print("Soma:", np.sum(arr))
+print("Média:", np.mean(arr))
+print("Desvio padrão:", np.std(arr))
+
+matriz = np.array ([[1, 2], [3, 4]])
+print("Determinante:", np.linalg.det(matriz))
