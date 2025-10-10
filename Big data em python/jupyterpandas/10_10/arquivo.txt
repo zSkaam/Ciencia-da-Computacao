@@ -1,0 +1,5 @@
+O Pandas é uma das bibliotecas mais importantes e amplamente utilizadas no ecossistema de ciência de dados em Python. Ele é essencialmente a "planilha" do Python, mas muito mais poderosa e flexível, tornando a manipulação e análise de dados algo intuitivo e eficiente.
+
+O Que é o Pandas?
+Pandas é uma biblioteca de código aberto que fornece estruturas de dados de alto desempenho e fáceis de usar e ferramentas de análise de dados. Seu nome deriva de "Panel Data", um termo de econometria para dados multidimensionais, e não dos animais fofinhos, embora a facilidade que ele traz ao trabalho com dados possa ser igualmente "adorável".
+
