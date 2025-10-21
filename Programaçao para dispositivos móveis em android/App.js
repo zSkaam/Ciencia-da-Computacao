@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { View, Text, TextInput, Button, StyleSheet, Pressable } from 'react-native';
+import { View, Text, TextInput, Button, StyleSheet, Pressable,ScrollView } from 'react-native';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 
 export default function App() {
@@ -10,15 +10,15 @@ export default function App() {
 const salvar = async () => {
   try {
     await AsyncStorage.setItem(chave, valor);
-    alert('Item salvo!');
+    console.log('Item salvo!');
   } catch (error) {
-    alert('Erro ao salvar');
+    console.log('Erro ao salvar');
   }
 };
 
 const remover = async () => {
   await AsyncStorage.removeItem(chave);
-  alert('Removido com sucesso');
+  console.log('Removido com sucesso');
 };
 
 
@@ -29,11 +29,17 @@ const ler = async () => {
 
 const listarChaves = async () => {
   const keys = await AsyncStorage.getAllKeys();
-  alert('Chaves salvas: ' + keys.join(', '));
+  console.log('Chaves salvas: ' + keys.join(', '));
+};
+
+const listarTodos = async () => {
+  const keys = await AsyncStorage.getAllKeys();
+  console.log('Chaves salvas: ' + keys.join(', '));
 };
 
 
   return (
+    <ScrollView style={styles.container}>
     <View style={styles.container}>
       <Text>AsyncStorage - Exemplo 1</Text>
       <TextInput placeholder="Key" value={chave} onChangeText={setChave} style={styles.input} />
@@ -54,9 +60,14 @@ const listarChaves = async () => {
     <Pressable style={styles.botao} onPress={listarChaves}> 
     <Text style={styles.botaotext}>LISTAR CHAVES</Text>
     </Pressable>
+
+    <Pressable style={styles.botao} onPress={listarTodos}> 
+    <Text style={styles.botaotext}>LISTAR TODOS</Text>
+    </Pressable>
     
     <Text>Resultado: {resultado}</Text>
     </View>
+    </ScrollView>
   );
 }
 
